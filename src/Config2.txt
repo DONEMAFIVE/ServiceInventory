@@ -1,0 +1,6 @@
+dbServer=127.0.0.1
+dbPort=3306
+dbName=inventory
+dbLogin=root
+dbPassword=
+dbParsing=NO

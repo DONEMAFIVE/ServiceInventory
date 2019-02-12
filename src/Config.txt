@@ -1,0 +1,6 @@
+dbServer=192.168.0.11
+dbName=inventory
+dbLogin=inventory
+dbPassword=INVENTORY23
+dbPort=3306
+dbParsing=NO
