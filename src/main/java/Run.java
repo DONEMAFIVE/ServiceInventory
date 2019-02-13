@@ -33,7 +33,6 @@ public class Run {
         GiveMeDate dateServlet = new GiveMeDate();
         GiveMeDataForDateServlet dataForDate = new GiveMeDataForDateServlet();
         GiveMeDataForMOL dataForMOL = new GiveMeDataForMOL();
-        GiveMeDataForNameNumber dataForNameNumber = new GiveMeDataForNameNumber();
         GiveMeMOL dataMOL = new GiveMeMOL();
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
@@ -42,7 +41,6 @@ public class Run {
         context.addServlet(new ServletHolder(AddValuesServlet), "/add");
         context.addServlet(new ServletHolder(dataForDate), "/datafordate");
         context.addServlet(new ServletHolder(dataForMOL), "/dataformol");
-        context.addServlet(new ServletHolder(dataForNameNumber), "/datafornamenumber");
         context.addServlet(new ServletHolder(dataMOL), "/getmol");
 
         Server server = new Server(2298);
